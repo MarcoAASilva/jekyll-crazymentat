@@ -3,7 +3,7 @@ domain: "https://marcoaasilva.github.io/jekyll-crazymentat"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://marcoaasilva.github.io/jekyll-crazymentat" # the base hostname & protocol for your sitez
 permalink: /:title/
-avatar: /img/jekyll-maas.png
+avatar: https://marcoaasilva.github.io/jekyll-crazymentat/img/jekyll-maas.png
 favicon: /img/favicon.ico
 basecss: 
 # Theme specific configuration
