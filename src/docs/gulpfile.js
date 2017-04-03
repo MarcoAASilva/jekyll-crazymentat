@@ -27,7 +27,7 @@ gulp.task('jekyll', done => {
   
   gulpUtil.log("jekyll script : " + execScript);
   
-  childProcess.spawn(execScript, ['build', '--drafts', '--future'], { stdio: 'inherit' }).on('close', done);
+  childProcess.spawn(execScript, ['build', '--drafts', '--destination', '../../docs', '--future'], { stdio: 'inherit' }).on('close', done);
 });
 
 // Rebuild and refresh project
@@ -48,12 +48,12 @@ gulp.task('browser-sync', ['styles', 'jekyll'], () => {
     notify: false,
     // port: 4000,
     server: {
-      baseDir: '_site'
+      baseDir: '../../docs'
     }
   });
   
   gulp.watch('_src/css/**/*.css', ['styles', 'reload']);
-  gulp.watch(['index.html', 'docs/_layouts/*.html', 'docs/_includes/*.html', 'docs/_posts/*', 'docs/_drafts/*', 'docs/*.md'], ['reload']);
+  gulp.watch(['index.html', '_layouts/*.html', '_includes/*.html', '_posts/*', '_drafts/*', '*.md'], ['reload']);
 
 });
 
