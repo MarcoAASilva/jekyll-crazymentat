@@ -45,7 +45,7 @@
   }
 
   a {
-    color: var(--color-text);
+    color: var(--color1);
     font-family: var(--title-font);
     transition:all 0.25s ease-in;
 

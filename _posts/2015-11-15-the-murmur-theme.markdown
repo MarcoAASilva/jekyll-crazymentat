@@ -10,6 +10,8 @@ description: Murmur theme presents your words & photographs in a handsome, agree
 tail: I'm a tail
 ---
 ---
+Testing browser-sync NININA
+
 Landing somewhere between a scholarly publication and an adventurers notebook, the Murmur theme presents your words & photographs in a handsome, agreeable manner. It is well behaved on both mobile & desktop and radically minimal in its footprint. Charged and ready for deployment to Github Pages.
 
 Suitable for shortform, longform, and probably even waveform. It is purpose-built to accomodate photographic content wonderfully and lends itself well to journaling your sojourn.

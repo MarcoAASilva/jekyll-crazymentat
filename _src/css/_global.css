@@ -32,8 +32,8 @@
 :root {
   --color-text: #444;
   --color-border: #eee;
-  --color1: #1565C0;
-  --color2: #999;
+  --color1: #607744;
+  --color2: #b39c4d;
   --title-font: Georgia,"Microsoft YaHei",sans-serif;
 }
 
@@ -99,6 +99,6 @@ img {
 }
 
 a:hover, a:visited, a:active {
-  color: #444;
+  color: var(--color1);
   text-decoration: none;
 }

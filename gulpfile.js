@@ -1,6 +1,8 @@
+const browserSync = require('browser-sync');
+const childProcess = require('child_process');
 const gulp = require('gulp');
-const cp = require('child_process');
-const bs = require('browser-sync');
+const gulpUtil = require('gulp-util');
+
 const postcss = require('gulp-postcss');
 const cssImport = require('postcss-import');
 const nest = require('postcss-nested');
@@ -11,30 +13,48 @@ const nano = require('gulp-cssnano');
 
 // Build jekyll project
 gulp.task('jekyll', done => {
-  cp.spawn('jekyll', ['build', '--drafts', '--quiet', '--future'], { stdio: 'inherit' }).on('close', done);
+  gulpUtil.log("process-platform : " + process.platform);
+  
+  var isWin = /^win/.test(process.platform);
+  var execScript;
+  
+  if (isWin){
+	  execScript = "jekyll.bat";
+  }else{
+	  execScript = "jekyll";
+	  
+  }
+  
+  gulpUtil.log("jekyll script : " + execScript);
+  
+  childProcess.spawn(execScript, ['build', '--drafts', '--future'], { stdio: 'inherit' }).on('close', done);
 });
 
 // Rebuild and refresh project
 gulp.task('reload', ['jekyll'], () => {
-  bs.reload();
+  browserSync.reload();
 });
 
 // Start BrowserSync server and serve _site directory
 gulp.task('browser-sync', ['styles', 'jekyll'], () => {
-  bs({
+  browserSync.init({
     ui: false,
     ghostMode: {
       clicks: true,
       forms: false,
       scroll: true
     },
-    logPrefix: 'songroger',
+    logPrefix: 'dreamcaster',
     notify: false,
     // port: 4000,
     server: {
       baseDir: '_site'
     }
   });
+  
+  gulp.watch('_src/css/**/*.css', ['styles', 'reload']);
+  gulp.watch(['index.html', '_layouts/*.html', '_includes/*.html', '_posts/*', '_drafts/*', '*.md'], ['reload']);
+
 });
 
 // Process css, autoprefix, minify

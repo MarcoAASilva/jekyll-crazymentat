@@ -20,8 +20,8 @@
   img {
     /*position: absolute;*/
     display:initial;
-    width:30px;
-    height:30px;
+    width:100px;
+    height:100px;
     vertical-align:middle;
     border-radius:15px;
     opacity: 1;
@@ -68,7 +68,7 @@
   display: flex;
   flex-wrap: wrap;
   a {
-    color: var(--color-text);
+    color: var(--color1);
     &:hover {
       color: var(--color2);
       transition: all .5s ease-in;
