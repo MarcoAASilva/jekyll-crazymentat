@@ -1,51 +1,30 @@
+---
+layout: null
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>crazymentat</title>
-    <description>Hi there, my name is Marco Silva. I usually use &quot;dreamcaster&quot; or &quot;MarcoAASilva&quot; as my ID everywhere. I was born and raised in Brazil.  I live in Porto Alegre. I'm really fond of programming, scifi and philosophy.
-</description>
-    <link>http://127.0.0.1:3000/</link>
-    <atom:link href="http://127.0.0.1:3000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 03 Apr 2017 19:45:21 -0300</pubDate>
-    <lastBuildDate>Mon, 03 Apr 2017 19:45:21 -0300</lastBuildDate>
-    <generator>Jekyll v3.4.3</generator>
-    
+    <title>{{ site.title | xml_escape }}</title>
+    <description>{{ site.description | xml_escape }}</description>
+    <link>{{ site.url }}{{ site.baseurl }}/</link>
+    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
+    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    <generator>Jekyll v{{ jekyll.version }}</generator>
+    {% for post in site.posts limit:10 %}
       <item>
-        <title>Quick Foreword</title>
-        <description>&lt;hr /&gt;
-&lt;p&gt;After much experimenting with Jekyll workflows, here is my first post to this blog template.&lt;/p&gt;
-
-&lt;h1 id=&quot;first-tricks&quot;&gt;First Tricks&lt;/h1&gt;
-
-&lt;p&gt;Here are some cool links that may well end up at the header:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://jekyllrb.com/docs/frontmatter/&quot;&gt;FrontMatter&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&quot;&gt;Markdown Cheatsheet&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;You may add a post by creating a file under the &lt;em&gt;docs/_posts&lt;/em&gt; folder.  Use date format conventions to get chronological order right.&lt;/p&gt;
-
-&lt;p&gt;You may control the published state of a post by the &lt;strong&gt;published&lt;/strong&gt; global variable in FrontMatter.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;that’s how I unpublished Murmur’s original posts.  I’m keeping the files at the repo for reference.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;acknowledgements&quot;&gt;Acknowledgements&lt;/h2&gt;
-
-&lt;p&gt;Forked from &lt;a href=&quot;https://github.com/songroger/murmur&quot;&gt;Murmur template&lt;/a&gt;, so my thanks to &lt;a href=&quot;https://github.com/songroger&quot;&gt;Songrorger&lt;/a&gt;!&lt;/p&gt;
-</description>
-        <pubDate>Mon, 03 Apr 2017 10:50:00 -0300</pubDate>
-        <link>http://127.0.0.1:3000/acknowledgements/</link>
-        <guid isPermaLink="true">http://127.0.0.1:3000/acknowledgements/</guid>
-        
-        
-        <category>jekyll</category>
-        
-        <category>theme</category>
-        
+        <title>{{ post.title | xml_escape }}</title>
+        <description>{{ post.content | xml_escape }}</description>
+        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
+        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
+        {% for tag in post.tags %}
+        <category>{{ tag | xml_escape }}</category>
+        {% endfor %}
+        {% for cat in post.categories %}
+        <category>{{ cat | xml_escape }}</category>
+        {% endfor %}
       </item>
-    
+    {% endfor %}
   </channel>
 </rss>
