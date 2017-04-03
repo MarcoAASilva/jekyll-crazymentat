@@ -4,7 +4,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://127.0.0.1:3000" # the base hostname & protocol for your sitez
 permalink: /:title/
 avatar: /img/jekyll-maas.png
-favicon: http://7xof48.com1.z0.glb.clouddn.com/favicon.png
+favicon: /img/favicon.ico
 basecss: 
 # Theme specific configuration
 title: crazymentat

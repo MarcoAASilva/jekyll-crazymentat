@@ -53,7 +53,7 @@ gulp.task('browser-sync', ['styles', 'jekyll'], () => {
   });
   
   gulp.watch('_src/css/**/*.css', ['styles', 'reload']);
-  gulp.watch(['index.html', '_layouts/*.html', '_includes/*.html', '_posts/*', '_drafts/*', '*.md'], ['reload']);
+  gulp.watch(['index.html', 'docs/_layouts/*.html', 'docs/_includes/*.html', 'docs/_posts/*', 'docs/_drafts/*', 'docs/*.md'], ['reload']);
 
 });
 
