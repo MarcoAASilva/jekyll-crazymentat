@@ -1,9 +1,20 @@
 ---
 layout: default
 ---
+  <h1>What?</h1>
+  <p>Crazy Mentat is an uber-simple template for the Jekyll engine.</p>
+  <p><a ref="https://jekyllrb.com/">Jekyll</a> makes it easy to generate static web sites, and blogs.</p>
+  
+  <h1>But Why?</h1>
+  <p>If you're a novice to Jekyll, or unsure why static web sites might be relevant, please have a look <a href="https://learn.cloudcannon.com/jekyll/why-use-a-static-site-generator/"> at this article.</a></p>
 
+  <h1>How?</h1>
+  <p>With Docker Compose you should be able to <a href="http://localhost:3000/get_started/">get started very quickly.</a></p>
+  
+  <h2>And now, for the posts...</h1>
+  <br/>
+  
   {% for post in site.posts limit:3 %}
-    <!-- article -->
     <article class="article">
       <h2 class="article__title">
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
@@ -12,17 +23,4 @@ layout: default
       <p class="article__excerpt">{{ post.excerpt | truncate: 160 }}</p>
       <a href="{{ post.url | prepend: site.baseurl }}" class="article__more">Read more »</a>
     </article>
-    <!-- / article -->
   {% endfor %}
-
-    <!-- <nav class="blocks blocks--space">
-      <div class="blocks__item">
-        {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path }}">Previous</a>{% endif %}
-      </div>
-      <div class="blocks__item">
-        Page: {{ paginator.page }} of {{ paginator.total_pages }}
-      </div>
-      <div class="blocks__item">
-        {% if paginator.next_page %}<a href="{{ paginator.next_page_path }}">Next</a>{% endif %}
-      </div>
-    </nav> -->

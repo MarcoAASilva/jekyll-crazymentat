@@ -1,28 +1,3 @@
-/* Default values */
-
-/* font-size: 109.375%; */
-/* font-size: my value * default browser font size * line height multiplier; */
-/* font-size: 109.375% * 16; */
-/* font-size: 17.5px; */
-
-/* line-height: 1.6rem; */
-/* line-height: font size * line height multiplier; */
-/* line-height: 17.5 * 1.6; */
-/* line-height: 28px; */
-
-
-/* Min width 700px */
-
-/* font-size: 132.8125%; */
-/* font-size: my value * default browser font size * line height multiplier; */
-/* font-size: 132.8125% * 16; */
-/* font-size: 21.25px; */
-
-/* line-height: 1.6rem; */
-/* line-height: font size * line height multiplier; */
-/* line-height: 21.25 * 1.6; */
-/* line-height: 34px; */
-
 ::selection {
   background: var(--color1);
   color: #fff;
@@ -34,11 +9,12 @@
   --color-border: #eee;
   --color1: #607744;
   --color2: #b39c4d;
-  --title-font: Georgia,"Microsoft YaHei",sans-serif;
+  --color3: #e70000;
+  --em-font: Courier,sans-serif;
+  --title-font: Calibri,sans-serif;
 }
 
 html {
-  font-size: 109.375%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
@@ -68,9 +44,9 @@ html {
 
 body {
   color: var(--color-text);
-  font-family: Georgia,'Source Sans Pro', sans-serif;
-  font-size: 0.9rem;
-  line-height: 1.6rem;
+  font-family: Calibri , sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.4rem;
 
 
 /*  background-image: linear-gradient(rgba(50, 50, 50, .1) 1px, transparent 1px);

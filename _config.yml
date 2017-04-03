@@ -1,25 +1,19 @@
 # Site configuration
 domain: "http://songroger.win"
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://127.0.0.1:3000/" # the base hostname & protocol for your sitez
+url: "http://127.0.0.1:3000" # the base hostname & protocol for your sitez
 permalink: /:title/
 avatar: /img/jekyll-maas.png
-about: http://7xof48.com1.z0.glb.clouddn.com/about.jpg
 favicon: http://7xof48.com1.z0.glb.clouddn.com/favicon.png
 basecss: 
 # Theme specific configuration
-title: songroger
+title: crazymentat
 description: >
-  Hi there, My name is Luozhan.Song, usually I use "songroger" as my ID everywhere.
-  I was born and raised in Hunan China. 
-  I'm really fond of beautiful design, drawing etc.
-
+  Hi there, my name is Marco Silva.
+  I usually use "dreamcaster" or "MarcoAASilva" as my ID everywhere.
+  I was born and raised in Brazil.  I live in Porto Alegre.
+  I'm really fond of programming, scifi and philosophy.
 # Contact and social media links
-twitter_username: songrogero
-github_username: songroger
-facebook_username: song.roger.1
-instagram_username: songroger198
-linkedin_username: songroger
 
 exclude: ['node_modules', 'gulpfile.js', 'package.json']
 
