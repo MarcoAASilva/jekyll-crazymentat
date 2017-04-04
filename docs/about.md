@@ -15,8 +15,7 @@ title: About
 
   Crazy Mentat is my first template for the Jekyll engine.  
 
-
-![Maria Robot Face]({{ "https://marcoaasilva.github.io/jekyll-crazymentat/img/MariaRobotFace.gif" }})
+![Maria Robot Face2]({{ "img/MariaRobotFace2.gif " | absolute_url }})
 
 ---
 > A Mentat is a fictional type of human, presented in [Frank Herbert's science fiction Dune](https://www.theguardian.com/books/2015/jul/03/dune-50-years-on-science-fiction-novel-world) universe. In an interstellar society that fears a resurgence of artificial intelligence and thus prohibits computers, Mentats are specially trained to mimic the cognitive and analytical ability of electronic computers.
