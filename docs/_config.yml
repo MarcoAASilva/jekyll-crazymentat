@@ -1,9 +1,9 @@
 # Site configuration
 domain: "marcoaasilva.github.io"
 #domain: "http://localhost:3000"
-baseurl: "jekyll-crazymentat" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 #baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://marcoaasilva.github.io/" # the base hostname & protocol for your sitez
+url: "https://marcoaasilva.github.io/jekyll-crazymentat" # the base hostname & protocol for your sitez
 #url: "http://localhost:3000"
 permalink: /:title/
 avatar: https://marcoaasilva.github.io/jekyll-crazymentat/img/jekyll-maas.png
