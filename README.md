@@ -1,7 +1,6 @@
-# [jekyll-crazyhawat](http://songroger.github.io/murmur)
+# [jekyll-crazyhawat](https://marcoaasilva.github.io/jekyll-crazymentat/)
 
-![preview](preview.png)
+Visit [our blog](https://marcoaasilva.github.io/jekyll-crazymentat/)
 
-This is another simple theme for [jekyll](http://jekyllrb.com/).
-Try to edit `_config.yml` first before use it.
-Replace all the blabla configurations(like "avatar", "about", "title", etc.) to your owns.
+![preview](docs/img/MariaRobotFace.gif)
+
