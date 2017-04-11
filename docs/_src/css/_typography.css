@@ -55,19 +55,14 @@ h6 {
   }
 }
 
-/*
-typo scale
-1:√2 – aug. fourth / dim. fifth
-*/
-
 h1 {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.21rem;
+  line-height: 1.5rem;
 }
 
 h2 {
   font-size: 1.17rem;
-  line-height: 1.8rem;
+  line-height: 1.5rem;
 }
 
 h3 {

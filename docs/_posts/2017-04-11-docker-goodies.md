@@ -10,7 +10,7 @@ description: some useful Docker commands
 tail: Tail(1) Linux is your friend
 ---
 ---
-# Useful Docker Commands
+# Some Useful Docker Commands
 
 ## Remove all containers
 Under the prompt:

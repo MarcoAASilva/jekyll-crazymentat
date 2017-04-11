@@ -1,25 +1,25 @@
 ---
 layout: default
 ---
-  <h1>What?</h1>
+  <h3>What?</h3>
   <p>Crazy Mentat is an uber-simple template for the Jekyll engine.</p>
   <p><a ref="https://jekyllrb.com/">Jekyll</a> is the official engine of <a hre="https://pages.github.com/">GitHub Pages</a> that makes it easy to generate static web sites, and blogs.</p>
   
-  <h1>But Why?</h1>
+  <h3>But Why?</h3>
   <p>If you're a novice to Jekyll, or unsure why static web sites might be relevant, please have a look <a href="https://learn.cloudcannon.com/jekyll/why-use-a-static-site-generator/"> at this article.</a></p>
 
-  <h1>How?</h1>
+  <h3>How?</h3>
   <p>With Docker Compose you should be able to <a href="https://marcoaasilva.github.io/jekyll-crazymentat/get_started/">get started very quickly.</a></p>
   <p>Or you could take the long road, and install everything.</p>
   
-  <h2>Now, for the posts...</h1>
+  <p>Now, for the posts...</p>
   <br/>
 
   {% for post in site.posts limit:3 %}
     <article class="article">
-      <h2 class="article__title">
+      <h1 class="article__title">
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h2>
+      </h1>
       <time class="article__date" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%b %-d, %Y" }}</time>
       <p class="article__excerpt">{{ post.excerpt | truncate: 160 }}</p>
       <a href="{{ post.url | prepend: site.baseurl }}" class="article__more">Read more »</a>
