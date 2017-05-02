@@ -61,7 +61,7 @@ Download the Windows versions for these babies to **%OPENCV_REPO%\deps**
 
 [Intel(R) Threading Building Blocks 2017 Update 5](https://github.com/01org/tbb/releases)
 
-[Intel® Integrated Performance Primitives] (https://software.intel.com/en-us/intel-ipp) *beware, this library is huge, and requires registration*
+[IntelÂ® Integrated Performance Primitives] (https://software.intel.com/en-us/intel-ipp) *beware, this library is huge, and requires registration*
 
 Intel IPP Asynchronous C/C++ mentioned at the base tutorial is unavailable at the moment. [Apparently, it has been withdrawn from public preview by Intel more than two years ago](https://software.intel.com/en-us/forums/intel-integrated-performance-primitives/topic/594325).
 
